@@ -7,7 +7,7 @@ class App extends Component {
   render() {
     return (
       <div className="scoreboard" id="root">
-        <Header />
+        <Header title="Scoreboard" totalPlayers={1} />
         <Player />
       </div>
     );
