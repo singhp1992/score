@@ -7,9 +7,6 @@ class App extends Component {
   render() {
     return (
       <div className="App root">
-        <div className="App-header">
-          <h2>Interactive Scoreboard</h2>
-        </div>
         <Header />
       </div>
     );
