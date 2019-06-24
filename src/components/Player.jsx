@@ -9,10 +9,9 @@ function Player() {
             </span>
 
             <div className="counter">
-                <button> -
-                </button>
-                <button> +
-                </button>
+                <button className="counter-action decrement"> - </button>
+                <span className="counter-score"></span>
+                <button className="counter-action increment"> + </button>
             </div>
         </div>
 
