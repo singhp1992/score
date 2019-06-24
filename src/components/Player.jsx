@@ -7,7 +7,13 @@ function Player() {
             <span className="player-name">
                 Preeti
             </span>
-            
+
+            <div className="counter">
+                <button> -
+                </button>
+                <button> +
+                </button>
+            </div>
         </div>
 
     );
