@@ -7,7 +7,7 @@ import Player from './components/Player'
 class App extends Component {
   render() {
     return (
-      <div id="root">
+      <div className="scoreboard" id="root">
         <Header />
         <Player />
       </div>
