@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
+import Counter from './Counter'
 
 function Player() {
     return (
@@ -7,6 +8,8 @@ function Player() {
             <span className="player-name">
                 Preeti
             </span>
+
+            <Counter />
         </div>
 
     );
