@@ -1,11 +1,11 @@
 import React from 'react';
 import Counter from './Counter'
 
-function Player() {
+function Player(props) {
     return (
         <div className="player">
             <span className="player-name">
-                Preeti
+                {props.name}
             </span>
 
             <Counter />
