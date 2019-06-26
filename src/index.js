@@ -4,19 +4,19 @@ import App from './App';
 import './index.css';
 
 const players = [{
-  name: "Guil",
+  name: "Preeti",
   score: 50
 },
 {
-  name: "Treasure",
+  name: "Simon",
   score: 85
 },
 {
-  name: "Ashley",
+  name: "Bani",
   score: 95
 },
 {
-  name: "James",
+  name: "Simi",
   score: 80
 }
 ]
