@@ -6,7 +6,7 @@ import Player from './components/Player'
 const App = (props) => {
   return(
     <div className="scoreboard" id="root">
-         <Header title="Scoreboard" totalPlayers={1} />
+         <Header title="Scoreboard" totalPlayers={props.initialPlayers.length} />
 
       {/* Player List */}
       { props.initialPlayers.map( player => 
