@@ -12,7 +12,6 @@ const App = (props) => {
       { props.initialPlayers.map( player => 
         <Player 
           name={player.name} 
-          score={player.score} 
           key={player.id.toString()}
         />
       )}

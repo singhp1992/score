@@ -1,6 +1,17 @@
 import React from 'react';
 
 class Counter extends React.Component {
+
+    constructor() {
+        super()
+        this.state = {
+            score: 0
+        };
+    }
+
+
+
+
     render() {
         return (
             <div className="counter">
