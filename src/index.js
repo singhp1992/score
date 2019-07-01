@@ -26,6 +26,6 @@ import './index.css';
 // ]
 
 ReactDOM.render(
-  <App initialPlayers={players}/>,
+  <App/>,
   document.getElementById('root')
 );
