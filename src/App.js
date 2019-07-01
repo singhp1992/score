@@ -26,8 +26,10 @@ class App extends React.Component {
 
   handleRemovePlayer = (id) => {
    this.setState( prevState => {
-     players:
-   })
+     return {
+       players: prevState.players.filter( p => p.id !== id )
+     };
+   });
   }
 
 
@@ -43,7 +45,9 @@ class App extends React.Component {
         {this.state.players.map(player =>
           <Player
             name={player.name}
+            id={player.id}
             key={player.id.toString()}
+            removePlayer={this.handleRemovePlayer}
           />
         )}
       </div>
