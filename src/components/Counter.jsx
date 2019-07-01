@@ -19,11 +19,11 @@ class Counter extends React.Component {
         this.setState(prevState => {
             return {
 
-                score: prevState.score + 1
+                score: prevState.score - 1
             };
         });
     }
-    
+
     render() {
         return (
             <div className="counter">
