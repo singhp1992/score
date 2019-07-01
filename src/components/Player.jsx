@@ -5,6 +5,7 @@ function Player(props) {
     return (
         <div className="player">
             <span className="player-name">
+                <button></button>
                 { props.name }
             </span>
 
