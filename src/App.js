@@ -28,10 +28,13 @@ class App extends React.Component {
   render() {
     return (
       <div className="scoreboard" id="root">
-        <Header title="Scoreboard" totalPlayers={props.initialPlayers.length} />
+        <Header 
+          title="Scoreboard" 
+          totalPlayers={this.state.players.length} 
+        />
 
         {/* Player List */}
-        {props.initialPlayers.map(player =>
+        {this.state.players.map(player =>
           <Player
             name={player.name}
             key={player.id.toString()}
