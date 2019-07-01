@@ -103,7 +103,12 @@ input[type=submit] {
               color 0.2s ease;
 }
 
- .remove-player {
+.player-name:hover .remove-player {
+    visibility: visible;
+}
+
+
+.remove-player {
    font-size: 1.15em;
    border: none;
    outline: none;
@@ -113,7 +118,7 @@ input[type=submit] {
    margin: 0 10px 0 0;
    padding: 0;
    background: none;
- }
+}
 
 /* ICONS */
 
