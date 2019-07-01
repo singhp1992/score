@@ -24,6 +24,12 @@ class App extends React.Component {
       }]
   }
 
+  handleRemovePlayer = (id) => {
+   this.setState( prevState => {
+     players:
+   })
+  }
+
 
   render() {
     return (
