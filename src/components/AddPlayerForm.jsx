@@ -1,6 +1,11 @@
 import React, {Component} from 'react';
 
 class AddPlayerForm extends Component {
+
+    state = {
+        value: ''
+    };
+    
     render() {
         return(
             <form>
