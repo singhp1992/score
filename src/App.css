@@ -62,17 +62,17 @@ input[type=text] {
   margin: 15px 10px 15px 15px;
   padding: 10px;
   border-radius: 5px;
-  background-color:  rgb(99, 177, 250);
+  background-color:  rgb(31, 144, 250);
   border-style: none;
   text-shadow: none;
   text-transform: uppercase;
-  color: #C7BCF8;
+  color: rgb(255, 255, 255);
   letter-spacing: 2px;
   outline: none;
 }
 
 input[type=text]::-webkit-input-placeholder{
-  color: #C7BCF8;
+  color: rgb(255, 255, 255);
   letter-spacing: 2px;
 }
 
@@ -85,7 +85,7 @@ input[type=submit] {
   font-size: .6em;
   margin: 15px 15px 15px 0; 
   padding: 10px;
-  background-color: #44338D;
+  background-color: rgb(31, 144, 250);
   border-radius: 5px;
   border: none;
   color: #fff;
@@ -106,7 +106,6 @@ input[type=submit] {
 .player-name:hover .remove-player {
     visibility: visible;
 }
-
 
 .remove-player {
    font-size: 1.15em;

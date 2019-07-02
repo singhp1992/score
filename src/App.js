@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Header from './components/Header'
 import Player from './components/Player'
+import AddPlayerForm from './components/AddPlayerForm'
 
 class App extends React.Component {
 
@@ -28,10 +29,26 @@ class App extends React.Component {
       }]
   }
 
+  //id counter 
+  prevPlayerId = 4;
+
   handleScoreChange = (index, delta) => {
     this.setState(prevState => ({
         score: prevState.players[index].score += delta
     }));
+  }
+
+  handleAddPlayer = (name) => {
+    this.setState({
+      players: [
+        ...this.state.players,
+        {
+          name,
+          score: 0,
+          id: this.prevPlayerId += 1
+        }
+      ]
+    });
   }
 
   handleRemovePlayer = (id) => {
@@ -63,6 +80,8 @@ class App extends React.Component {
             removePlayer={this.handleRemovePlayer}
           />
         )}
+
+        <AddPlayerForm addPlayer={this.handleAddPlayer}/>
       </div>
     )
   }

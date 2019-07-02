@@ -4,8 +4,8 @@ import Stats from './Stats'
 function Header(props) {
     return (
         <header>
-            <Stats players={props.players}/>
             <h1>{props.title}</h1>
+            <Stats players={props.players} />
         </header>
     );
 }
