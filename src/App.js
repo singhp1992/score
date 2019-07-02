@@ -28,7 +28,7 @@ class App extends React.Component {
       }]
   }
 
-  incrementScore = () => {
+  handleScoreChange = () => {
     this.setState(prevState => {
       return {
 
