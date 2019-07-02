@@ -29,13 +29,9 @@ class App extends React.Component {
   }
 
   handleScoreChange = (index, delta) => {
-    // this.setState(prevState => {
-    //   return {
-
-    //     score: prevState.score + 1
-    //   };
-    // });
-    console.log(delta)
+    this.setState(prevState => ({
+        score: prevState.score + 1
+    }));
   }
 
   // decrementScore = () => {
