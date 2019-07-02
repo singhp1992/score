@@ -28,23 +28,24 @@ class App extends React.Component {
       }]
   }
 
-  handleScoreChange = () => {
-    this.setState(prevState => {
-      return {
+  handleScoreChange = (index, delta) => {
+    // this.setState(prevState => {
+    //   return {
 
-        score: prevState.score + 1
-      };
-    });
+    //     score: prevState.score + 1
+    //   };
+    // });
+    console.log(delta)
   }
 
-  decrementScore = () => {
-    this.setState(prevState => {
-      return {
+  // decrementScore = () => {
+  //   this.setState(prevState => {
+  //     return {
 
-        score: prevState.score - 1
-      };
-    });
-  }
+  //       score: prevState.score - 1
+  //     };
+  //   });
+  // }
 
   handleRemovePlayer = (id) => {
    this.setState( prevState => {
@@ -70,6 +71,7 @@ class App extends React.Component {
             score={player.score}
             id={player.id}
             key={player.id.toString()}
+            changeScore={this.handleScoreChange}
             removePlayer={this.handleRemovePlayer}
           />
         )}
