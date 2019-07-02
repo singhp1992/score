@@ -6,12 +6,17 @@ class AddPlayerForm extends Component {
         value: ''
     };
 
+    handleValueChange = () => {
+        
+    }
+
     render() {
         return(
             <form>
                 <input 
                     type="text"
                     value={this.state.value}
+                    onChange={this.handleValueChange}
                     placeholder="Enter a player's name"
                 />
 
