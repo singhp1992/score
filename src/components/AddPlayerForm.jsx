@@ -6,8 +6,8 @@ class AddPlayerForm extends Component {
         value: ''
     };
 
-    handleValueChange = () => {
-        
+    handleValueChange = (e) => {
+        this.setState({value: e.target.value });
     }
 
     render() {
