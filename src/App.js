@@ -3,20 +3,78 @@ import './App.css';
 import Header from './components/Header'
 import Player from './components/Player'
 
-const App = (props) => {
-  return(
-    <div className="scoreboard" id="root">
-         <Header title="Scoreboard" totalPlayers={props.initialPlayers.length} />
+class App extends React.Component {
 
-      {/* Player List */}
-      { props.initialPlayers.map( player => 
-        <Player 
-          name={player.name} 
-          score={player.score} 
+  state = {
+    players: [{
+        name: "Preeti",
+        score: 0,
+        id: 1
+      },
+      {
+        name: "Simon",
+        score: 0,
+        id: 2
+      },
+      {
+        name: "Bani",
+        score: 0,
+        id: 3
+      },
+      {
+        name: "Simi",
+        score: 0,
+        id: 4
+      }]
+  }
+
+  handleScoreChange = (index, delta) => {
+    this.setState(prevState => ({
+        score: prevState.players[index].score += delta
+    }));
+  }
+
+  // decrementScore = () => {
+  //   this.setState(prevState => {
+  //     return {
+
+  //       score: prevState.score - 1
+  //     };
+  //   });
+  // }
+
+  handleRemovePlayer = (id) => {
+   this.setState( prevState => {
+     return {
+       players: prevState.players.filter( p => p.id !== id )
+     };
+   });
+  }
+
+
+  render() {
+    return (
+      <div className="scoreboard" id="root">
+        <Header 
+          title="Scoreboard" 
+          totalPlayers={this.state.players.length} 
         />
-      )}
-    </div>
-  )
+
+        {/* Player List */}
+        {this.state.players.map( (player, index) =>
+          <Player
+            name={player.name}
+            score={player.score}
+            id={player.id}
+            key={player.id.toString()}
+            index={index}
+            changeScore={this.handleScoreChange}
+            removePlayer={this.handleRemovePlayer}
+          />
+        )}
+      </div>
+    )
+  }
 }
 
 export default App;
