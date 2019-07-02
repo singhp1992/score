@@ -34,15 +34,6 @@ class App extends React.Component {
     }));
   }
 
-  // decrementScore = () => {
-  //   this.setState(prevState => {
-  //     return {
-
-  //       score: prevState.score - 1
-  //     };
-  //   });
-  // }
-
   handleRemovePlayer = (id) => {
    this.setState( prevState => {
      return {
@@ -57,7 +48,7 @@ class App extends React.Component {
       <div className="scoreboard" id="root">
         <Header 
           title="Scoreboard" 
-          totalPlayers={this.state.players.length} 
+          players={this.state.players}
         />
 
         {/* Player List */}
