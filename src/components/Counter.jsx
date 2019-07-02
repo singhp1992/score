@@ -2,23 +2,23 @@ import React from 'react';
 
 const Counter = (props) => {
 
-    incrementScore = () => {
-        this.setState( prevState => {
-            return {
+    // incrementScore = () => {
+    //     this.setState( prevState => {
+    //         return {
                   
-                score: prevState.score + 1
-            };
-        });
-    }
+    //             score: prevState.score + 1
+    //         };
+    //     });
+    // }
 
-    decrementScore = () => {
-        this.setState(prevState => {
-            return {
+    // decrementScore = () => {
+    //     this.setState(prevState => {
+    //         return {
 
-                score: prevState.score - 1
-            };
-        });
-    }
+    //             score: prevState.score - 1
+    //         };
+    //     });
+    // }
 
     return (
         <div className="counter">
