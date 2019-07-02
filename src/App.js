@@ -48,7 +48,7 @@ class App extends React.Component {
       <div className="scoreboard" id="root">
         <Header 
           title="Scoreboard" 
-          totalPlayers={this.state.players.length} 
+          players={this.state.players}
         />
 
         {/* Player List */}
