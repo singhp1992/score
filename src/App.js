@@ -28,6 +28,15 @@ class App extends React.Component {
       }]
   }
 
+  incrementScore = () => {
+    this.setState(prevState => {
+      return {
+
+        score: prevState.score + 1
+      };
+    });
+  }
+
   handleRemovePlayer = (id) => {
    this.setState( prevState => {
      return {
