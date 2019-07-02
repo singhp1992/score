@@ -64,6 +64,8 @@ class App extends React.Component {
             removePlayer={this.handleRemovePlayer}
           />
         )}
+
+        <AddPlayerForm />
       </div>
     )
   }
