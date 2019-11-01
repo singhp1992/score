@@ -72,7 +72,6 @@ class App extends React.Component {
         {this.state.players.map( (player, index) =>
           <Player
             name={player.name}
-            score={player.score}
             id={player.id}
             key={player.id.toString()}
             index={index}
