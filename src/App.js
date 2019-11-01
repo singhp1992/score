@@ -59,7 +59,7 @@ class App extends React.Component {
         />
 
         {/* Player List */}
-        {this.state.players.map( (player, index) =>
+        {this.state.players.map((player, index) =>
           <Player
             name={player.name}
             id={player.id}
