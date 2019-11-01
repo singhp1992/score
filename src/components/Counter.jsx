@@ -26,9 +26,9 @@ class Counter extends React.Component {
     render() {
         return (
             <div className="counter">
-                <button className="counter-action decrement" onClick={() => this.minusScore}> - </button>
+                <button className="counter-action decrement" onClick={this.minusScore}> - </button>
                 <span className="counter-score"> {this.state.score} </span>
-                <button className="counter-action increment" onClick={() => this.plusScore}> + </button>
+                <button className="counter-action increment" onClick={this.plusScore}> + </button>
             </div>
         );
     }
