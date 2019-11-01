@@ -80,3 +80,5 @@ class App extends React.Component {
 }
 
 export default App;
+
+// delete index props in player tag if you dont use the handlescorechange fcn in counter class
