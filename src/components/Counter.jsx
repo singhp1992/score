@@ -11,6 +11,12 @@ class Counter extends React.Component {
     //     }));
     // }
 
+    plusScore = () => {
+       this.setState({
+           score: this.state.score -1
+       })
+    }
+
     render() {
         return (
             <div className="counter">
