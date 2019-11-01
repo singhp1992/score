@@ -9,34 +9,24 @@ class App extends React.Component {
   state = {
     players: [{
         name: "Preeti",
-        score: 0,
         id: 1
       },
       {
         name: "Simon",
-        score: 0,
         id: 2
       },
       {
         name: "Bani",
-        score: 0,
         id: 3
       },
       {
         name: "Simi",
-        score: 0,
         id: 4
       }]
   }
 
   //id counter 
   prevPlayerId = 4;
-
-  handleScoreChange = (index, delta) => {
-    this.setState(prevState => ({
-        score: prevState.players[index].score += delta
-    }));
-  }
 
   handleAddPlayer = (name) => {
     this.setState({
@@ -69,13 +59,12 @@ class App extends React.Component {
         />
 
         {/* Player List */}
-        {this.state.players.map( (player, index) =>
+        {this.state.players.map((player, index) =>
           <Player
             name={player.name}
             id={player.id}
             key={player.id.toString()}
             index={index}
-            changeScore={this.handleScoreChange}
             removePlayer={this.handleRemovePlayer}
           />
         )}
@@ -87,3 +76,5 @@ class App extends React.Component {
 }
 
 export default App;
+
+// delete index props in player tag if you dont use the handlescorechange fcn in counter class

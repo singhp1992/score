@@ -11,7 +11,7 @@ function Player(props) {
 
             <Counter 
                 index={props.index}
-                changeScore={props.changeScore}/>
+            />
         </div>
 
     );
