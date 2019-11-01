@@ -5,6 +5,8 @@ class Counter extends React.Component {
        score: 0
    }
 
+   
+
     render() {
         return (
             <div className="counter">
