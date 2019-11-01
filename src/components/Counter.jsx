@@ -13,8 +13,14 @@ class Counter extends React.Component {
 
     plusScore = () => {
        this.setState({
-           score: this.state.score - 1
-       })
+           score: this.state.score + 1
+       });
+    }
+
+    minusScore = () => {
+        this.setState({
+            score: this.state.score - 1
+        });
     }
 
     render() {
