@@ -19,12 +19,12 @@ class App extends React.Component {
       },
       {
         name: "Bani",
-        score:0,
+        score: 0,
         id: 3
       },
       {
         name: "Simi",
-        score:0,
+        score: 0,
         id: 4
       }]
   }
