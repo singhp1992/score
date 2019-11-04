@@ -76,6 +76,7 @@ class App extends React.Component {
             key={player.id.toString()}
             index={index}
             score={player.score}
+            changeScore={this.handleScoreChange}
             removePlayer={this.handleRemovePlayer}
           />
         )}
