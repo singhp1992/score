@@ -38,6 +38,8 @@ class App extends React.Component {
     }));
   }
 
+  // adding a new player to the game
+
   handleAddPlayer = (name) => {
     this.setState({
       players: [
