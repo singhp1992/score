@@ -53,6 +53,7 @@ class App extends React.Component {
     });
   }
 
+  // removing player from the game
   handleRemovePlayer = (id) => {
    this.setState( prevState => {
      return {
