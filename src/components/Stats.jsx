@@ -14,10 +14,10 @@ const Stats = (props) => {
                     <td>Players:</td>
                     <td>{ totalPlayers }</td>
                 </tr>
-                {/* <tr>
+                <tr>
                     <td>Total Points:</td>
                     <td> {totalPoints } </td>
-                </tr> */}
+                </tr>
             </tbody>
         </table >
     );

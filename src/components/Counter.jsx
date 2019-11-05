@@ -5,13 +5,7 @@ class Counter extends React.Component {
    state = {
        score: 0
    }
-
-    // handleScoreChange = (index, delta) => {
-    //     this.setState(prevState => ({
-    //         score: prevState.players[index].score += delta
-    //     }));
-    // }
-
+   
     plusScore = () => {
        this.setState( prevState => ({
         score: prevState.score + 1
