@@ -30,7 +30,7 @@ body {
   background: #e8e7e7; 
   font-family: arial;
   text-transform: uppercase;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.925);
 }
 
 header {
@@ -39,8 +39,8 @@ header {
   text-align: center;
   display: flex;
   align-items: center;
-  background-color: rgb(99, 177, 250);
-  border-bottom: solid 2px rgb(166, 204, 240);
+  background-color: #0102F7;
+  border-bottom: solid 2px rgb(56, 56, 248);
 }
 
 header h1 {
@@ -54,7 +54,7 @@ header h1 {
 
 form {
   display: flex;
-  background-color:  rgb(99, 177, 250);
+  background-color: #0102F7;
 }
 
 input[type=text] {
@@ -63,7 +63,7 @@ input[type=text] {
   margin: 15px 10px 15px 15px;
   padding: 10px;
   border-radius: 5px;
-  background-color:  rgb(31, 144, 250);
+  background-color: rgb(56, 56, 248);
   border-style: none;
   text-shadow: none;
   text-transform: uppercase;
@@ -86,7 +86,7 @@ input[type=submit] {
   font-size: .6em;
   margin: 15px 15px 15px 0; 
   padding: 10px;
-  background-color: rgb(31, 144, 250);
+  background-color: rgb(56, 56, 248);
   border-radius: 5px;
   border: none;
   color: #fff;
@@ -145,7 +145,6 @@ svg {
   background: #fff;
   width: 700px;
   margin: 70px auto;
-  box-shadow: 0 2px 0  rgb(99, 177, 250);
   border-radius: 6px;
   overflow: hidden;
 }
@@ -207,45 +206,6 @@ svg {
 
   .stats td:last-child {
     text-align: left;
-  }
-
-.stopwatch {
-  padding: 15px 10px 5px 10px;
-  margin: -5px -10px -5px 10px;
-  background:  rgb(99, 177, 250)
-}
-
-  .stopwatch-time {
-    display: block;
-    font-family: monospace;
-    font-size: 2.15em;
-  }
-
-  .stopwatch button {
-    margin: 8px 5px;
-    background-color: #44338D;
-    border-radius: 5px;
-    padding: 7px 8px;
-    border: none;
-    color: #fff;
-    letter-spacing: 2px;
-    font-weight: bold;
-    text-shadow: none;
-    text-transform: uppercase;
-  }
-
-  .stopwatch button:hover,
-  input[type=submit]:hover {
-    background: #fff;
-    color: #44338D;
-    cursor: pointer;
-  }
-
-  .stopwatch h2 {
-    font-size: .6em;
-    margin: 0;
-    font-weight: normal;
-    letter-spacing: 2px;
   }
 
 .counter {
