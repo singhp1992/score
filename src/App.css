@@ -30,7 +30,7 @@ body {
   background: #e8e7e7; 
   font-family: arial;
   text-transform: uppercase;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.925);
 }
 
 header {
