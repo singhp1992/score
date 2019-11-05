@@ -8,25 +8,25 @@ class App extends React.Component {
 
   state = {
     players: [{
-        name: "Preeti",
-        score: 0,
-        id: 1
-      },
-      {
-        name: "Zheng",
-        score: 0,
-        id: 2
-      },
-      {
-        name: "Bani",
-        score: 0,
-        id: 3
-      },
-      {
-        name: "Simi",
-        score: 0,
-        id: 4
-      }]
+      name: "Preeti",
+      score: 0,
+      id: 1
+    },
+    {
+      name: "Zheng",
+      score: 0,
+      id: 2
+    },
+    {
+      name: "Bani",
+      score: 0,
+      id: 3
+    },
+    {
+      name: "Simi",
+      score: 0,
+      id: 4
+    }]
   }
 
   //id counter 
@@ -77,10 +77,10 @@ class App extends React.Component {
         {this.state.players.map((player, index) =>
           <Player
             name={player.name}
+            score={player.score}
             id={player.id}
             key={player.id.toString()}
             index={index}
-            score={player.score}
             changeScore={this.handleScoreChange}
             removePlayer={this.handleRemovePlayer}
           />
