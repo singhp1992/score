@@ -13,7 +13,7 @@ class App extends React.Component {
         id: 1
       },
       {
-        name: "Simon",
+        name: "Zheng",
         score: 0,
         id: 2
       },
