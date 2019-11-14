@@ -1,6 +1,6 @@
 import React from 'react';
 import Stats from './Stats';
-import PropTypes from 'proptypes';
+import PropTypes from 'prop-types';
 import Stopwatch from './Stopwatch';
 
 const Header = ({ players, title }) => {
