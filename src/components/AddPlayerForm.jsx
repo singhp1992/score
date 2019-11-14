@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+
+// controlled component
 class AddPlayerForm extends Component {
 
     state = {
