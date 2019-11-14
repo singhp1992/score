@@ -15,6 +15,11 @@ class Stopwatch extends Component {
         this.intervalID = setInterval(() => this.tick(), 100);
     }
 
+    // to prevent memory leak
+    componentWillUnmount() {
+        clearInterval(this.intervalID);
+    }
+
     // timer by the second - will be called continuously
     tick = () => {
         if(this.state.isRunning) {
@@ -57,7 +62,7 @@ class Stopwatch extends Component {
                     {this.state.isRunning ? 'Stop' : 'Start'}
                 </button>
                 <button onClick={this.handleReset}>Reset</button>
-            </div>
+            </div> 
         )
     }
 }
