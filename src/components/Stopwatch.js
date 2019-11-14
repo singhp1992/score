@@ -6,11 +6,16 @@ class Stopwatch extends Component {
 
     state = {
         isRunning: false,
+        elapsedTime: 0, 
+    }
+
+    componentDidMount() {
+        this.intervalID = setInterval(() => this.tick(), 100);
     }
 
     // timer by the second - will be called continuously
     tick = () => {
-
+        console.log('ticking....')
     }
 
     // button will change from stop to start depending on the state of isRunning
