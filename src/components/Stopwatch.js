@@ -8,6 +8,11 @@ class Stopwatch extends Component {
         isRunning: false,
     }
 
+    // timer by the second - will be called continuously
+    tick = () => {
+
+    }
+
     // button will change from stop to start depending on the state of isRunning
     handleStopWatch = () => {
         this.setState({
