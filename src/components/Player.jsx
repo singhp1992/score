@@ -1,4 +1,5 @@
 import React, { PureComponent} from 'react';
+import PropTypes from 'prop-types';
 import Counter from './Counter'
 
 // purecomponent 
@@ -29,5 +30,7 @@ class Player extends PureComponent {
         );
     }
 }
+
+
 
 export default Player
