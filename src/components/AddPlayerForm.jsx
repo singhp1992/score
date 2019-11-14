@@ -10,6 +10,7 @@ class AddPlayerForm extends Component {
 
         e.preventDefault();
         addPlayer(this.playerInput.current.value);
+        e.currentTarget.reset()
     }
 
     render() {
