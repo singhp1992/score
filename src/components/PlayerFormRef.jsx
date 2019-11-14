@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 //uses refs
-class AddPlayerForm extends Component {
+class PlayerFormRef extends Component {
 
     playerInput = React.createRef();
 
@@ -33,4 +33,4 @@ class AddPlayerForm extends Component {
 
 }
 
-export default AddPlayerForm;
+export default PlayerFormRef;
