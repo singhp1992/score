@@ -7,8 +7,10 @@ class Stopwatch extends Component {
     state = {
         isRunning: false,
         elapsedTime: 0, 
+        previousTime: 0,
     }
 
+    // lifecycle method
     componentDidMount() {
         this.intervalID = setInterval(() => this.tick(), 100);
     }
@@ -22,7 +24,12 @@ class Stopwatch extends Component {
     handleStopWatch = () => {
         this.setState({
             isRunning: !this.state.isRunning
-        })
+        });
+        if(!this.state.isRunning) {
+            this.setState({
+                previousTime: Date.now()
+            });
+        }
     }
 
     render() {
