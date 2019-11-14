@@ -2,7 +2,7 @@ import React from 'react';
 import Stats from './Stats';
 import Stopwatch from './Stopwatch'
 
-const Header = (props) => {
+const Header = ({ players, title }) => {
     return (
         <header>
             <h1>{props.title}</h1>
