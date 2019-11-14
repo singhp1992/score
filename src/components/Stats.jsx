@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'proptypes';
 
 const Stats = (props) => {
 
@@ -23,5 +24,9 @@ const Stats = (props) => {
         </table >
     );
 }
+
+Stats.propTypes = {
+
+};
 
 export default Stats;
