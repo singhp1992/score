@@ -5,8 +5,8 @@ import Stopwatch from './Stopwatch'
 const Header = ({ players, title }) => {
     return (
         <header>
-            <h1>{props.title}</h1>
-            <Stats players={props.players} />
+            <h1>{title}</h1>
+            <Stats players={players} />
             <Stopwatch />
         </header>
     );
