@@ -216,7 +216,7 @@ svg {
 .stopwatch {
   padding: 15px 10px 5px 10px;
   margin: -5px -10px -5px 10px;
-  background: #5B45B9;
+  background: #0102F7;
 }
 
   .stopwatch-time {
@@ -227,7 +227,7 @@ svg {
 
   .stopwatch button {
     margin: 8px 5px;
-    background-color: #44338D;
+    background-color: rgb(49, 49, 252);
     border-radius: 5px;
     padding: 7px 8px;
     border: none;
