@@ -26,7 +26,7 @@ const Stats = (props) => {
 }
 
 Stats.propTypes = {
-    players: PropTypes.rrayOf(PropTypes.shape({
+    players: PropTypes.arrayOf(PropTypes.shape({
         score: PropTypes.number
     }))
 };
